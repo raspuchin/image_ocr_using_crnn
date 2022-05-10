@@ -8,7 +8,7 @@ import numpy as np
 def create_alphabet_map(working_dir):
     with open(working_dir) as f:
         alphabet = f.readline()
-    print(alphabet)
+    # print(alphabet)
 
     # Map the characters in the alphabet to the index
     alphabet_map = {}
@@ -17,7 +17,7 @@ def create_alphabet_map(working_dir):
         # The first one in the alphabet has been left blank,
         # and there is no need for special operation here
         alphabet_map[char] = i
-    print(alphabet_map)
+    # print(alphabet_map)
 
     return alphabet, alphabet_map
 
